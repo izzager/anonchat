@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login to AnonChat</title>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+<div id="login-container">
+    <div>
+        <a th:href="@{/newRoom}">Create room</a>
+    </div>
+
+    <h1 class="title">Enter code of room</h1>
+    <form id="loginForm" name="loginForm" method="POST">
+        <input type="text" name="roomCode" />
+        <button type="submit">Login</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new romm | AnonChat</title>
+</head>
+<body>
+    <div>
+        <h1 class="title">Your code of room: <span th:text="${newRoomCode}" /></h1>
+    </div>
+    <div>
+        <a th:href="@{/login}">Back to login page</a>
+    </div>
+</body>
+</html>
