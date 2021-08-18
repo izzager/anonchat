@@ -24,7 +24,7 @@ public class WebSocketController {
 
     @MessageMapping("/chat.addUser")
     public void addUserIntoRoom(@Payload ChatMessage chatMessage,
-                                       SimpMessageHeaderAccessor headerAccessor) {
+                                SimpMessageHeaderAccessor headerAccessor) {
         String room = chatMessage.getRoomCode();
         headerAccessor.getSessionAttributes().put("roomCode", room);
     }

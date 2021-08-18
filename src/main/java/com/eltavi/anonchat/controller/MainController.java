@@ -24,7 +24,7 @@ public class MainController {
         return "chat";
     }
 
-    @GetMapping( "/login")
+    @GetMapping("/login")
     public String showLoginPage() {
         return "login";
     }
@@ -40,7 +40,7 @@ public class MainController {
         return "redirect:/";
     }
 
-    @RequestMapping( "/logout")
+    @RequestMapping("/logout")
     public String logout(HttpServletRequest request) {
         request.getSession(true).invalidate();
         return "redirect:/login";
